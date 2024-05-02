@@ -1,0 +1,39 @@
+function colab_x_token() {//Funcion que te muestra los colaboradores de un usuario
+
+	tblColab = $('#tblMisColaboradores').DataTable({
+			
+			stateSave: true, //Guarda el estado de la tabla, orden, pagina etc
+			"stateDuration": -1,
+			"scrollY": '35vh',
+			"scrollCollapse": true,
+			"scrollX": false,
+			"bLengthChange": false,
+			"bPaginate": false,
+			 "bInfo": false,
+			 "searching": true,
+			"autoWidth": false,
+			
+			"responsive": {
+				"details": true,
+			},
+			"destroy": "true",
+		
+			"ajax": {
+				"url": "php/PlnDir/colab_x_usuario_token.php",
+				"type": "POST",
+				"dataSrc": "",
+			},
+			
+			"order": [[2, 'asc']],
+			
+			"columns": [
+				{"data": "id"}, 
+				{"defaultContent": "<button type='button' id=\"idTarea\" title=\"Tarea a Colaborador\" class='tareaColab btn btn-primary btn-xs '><span class='glyphicon glyphicon-pencil'></span></button>","width": "3%"}, 
+				{"data": "name"},
+				{"data": "apellidos"},
+				{"data": "tlf"},
+			]
+		});
+		
+		
+}
