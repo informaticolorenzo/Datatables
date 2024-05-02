@@ -1,23 +1,24 @@
 
-				<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de Colaboradores</title>
     <!-- Enlace a la hoja de estilos de DataTables -->
-   
-    <!-- Enlace a jQuery -->
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Enlace al script de DataTables -->
+<link href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+<!--<link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css" rel="stylesheet" /> <!-- CheckBox datatabla --->
+ <!-- Enlace a jQuery -->
+ <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <!-- Enlace al script de DataTables -->
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>	
+<!--<script type="text/javascript" src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>--->
+<script type="text/javascript" language="javascript" src="./js/dataTables.checkboxes.min.js"></script> <!---------Mis funciones en js---------->
 
 
-
-
-
-    <script type="text/javascript">
-      
-
+ <script type="text/javascript">
         // Llamar a la función cuando el documento esté listo
         $(document).ready(function() {
             colab_x_token();
@@ -26,18 +27,18 @@
 </head>
 <body>
     <!-- Tabla de Colaboradores -->
-    <table id="tblMisColaboradores" class="hover cell-border row-border display compact" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Teléfono</th>
-            </tr>
-        </thead>
-        <!-- Aquí puedes agregar filas de datos si lo deseas -->
-    </table>
+   <table id="tblMisColaboradores"class="hover cell-border row-border display compact"  cellspacing="0" width="100%">
+	<thead>
+		<tr>
+			<th></th>
+			<th></th>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>Tel&eacute;fono</th>
+		</tr>
+	</thead>
+</table>
+			
 </body>
 </html>
 			
