@@ -1,10 +1,4 @@
-         <link href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css" rel="stylesheet">
-	<link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
-	<!--<link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css" rel="stylesheet" /> <!-- CheckBox datatabla --->
-	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-	<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>	
-	<!--<script type="text/javascript" src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>--->
-	<script type="text/javascript" language="javascript" src="./js/dataTables.checkboxes.min.js"></script> <!---------Mis funciones en js---------->
+     
 	
 function colab_x_token() {
     // Función que te muestra los colaboradores de un usuario
